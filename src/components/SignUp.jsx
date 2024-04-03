@@ -93,7 +93,7 @@ const SignUp = () => {
         name="Full Name"
       />
       <CustomInput
-        type="text"
+        type="number"
         value={number}
         setValue={setNumber}
         name="Phone Number"
