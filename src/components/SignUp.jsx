@@ -17,7 +17,7 @@ const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [companyName, setCompanyName] = useState("");
-  const [isAgency, setIsAgency] = useState(false);
+  const [isAgency, setIsAgency] = useState('');
   const [loading, setLoading] = useState(false);
 
   const handleSignUp = async () => {
@@ -26,7 +26,7 @@ const SignUp = () => {
     
 
     // create the user in firebase
-    if(name,number,email,password){
+    if(name,number,email,password,isAgency){
 
         if ( password.length >= 6) {
             try {
@@ -128,7 +128,7 @@ const SignUp = () => {
               id="yes"
               type="checkbox"
               value={isAgency}
-              onChange={() => setIsAgency(true)}
+              onChange={() => setIsAgency("yes")}
             />
             <label htmlFor="yex">Yes</label>
           </div>
@@ -137,7 +137,7 @@ const SignUp = () => {
             <input
               type="checkbox"
               value={isAgency}
-              onChange={() => setIsAgency(false)}
+              onChange={() => setIsAgency("no")}
             />
             <label>No</label>
           </div>
