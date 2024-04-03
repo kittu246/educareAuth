@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+input {
+  font-family: "Inter", sans-serif;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.customLabel {
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background-color: #fff;
+  padding: 0 5px;
+}
+
+.customInput {
+  padding: 5px;
+  width: 50vw;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.customButton {
+  padding: 5px;
+  width: 50vw;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(196 181 253);
+}
+
+.customButton:hover {
+  background-color: rgb(124 58 237);
+}
+
+@media screen and (max-width: 676px) {
+  .customInput,
+  .customButton {
+    width: 90vw;
+  }
+}
